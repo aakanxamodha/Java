@@ -13,9 +13,9 @@ class Quadratic
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter 3 values: ");
-		a = sc.nextDouble();
-		b = sc.nextDouble();
-		c = sc.nextDouble();
+		a = Double.parseDouble(args[0]);
+		b = Double.parseDouble(args[1]);
+		c = Double.parseDouble(args[2]);
 
 		double discri, r1_add, r2_minus, b_Sq, ac, w_root;
 
