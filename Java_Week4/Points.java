@@ -53,6 +53,6 @@ class Points
 		double p1p3 = Points.calculate(P1, P3);
 
 		System.out.println("Distance between p1 and p2: " + p1p2);
-        System.out.println("Distance between p1 and p3: " + p1p3);
+        	System.out.println("Distance between p1 and p3: " + p1p3);
 	}
 }
