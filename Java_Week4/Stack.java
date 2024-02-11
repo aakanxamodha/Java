@@ -64,6 +64,11 @@ class Stack
 		}
 	}
 
+	public static void pop(Stack s)
+	{
+		s.pop();
+	}
+
 	public static void push(Stack s, int ele)
 	{
 		s.push(ele);
@@ -86,20 +91,20 @@ class Stack
 				choice = sc.nextInt();
 				switch(choice)
 				{
-      				case 1: s.getData();
+      					case 1: s.getData();
       						break;
 
-					case 2: s.pop();
-							break;
+					case 2: s.pop(s);
+						break;
 
 					case 3:	System.out.println("Enter the element you want to push:");
-							int element = sc.nextInt();
+						int element = sc.nextInt();
     						push(s, element);
 
-    				case 0: System.out.println("Exit..!");
+    					case 0: System.out.println("Exit..!");
     						break;
 
-    				default: System.out.println("Enter a valid number: ");
+    					default: System.out.println("Enter a valid number: ");
     						 break;
 				}
 			}
