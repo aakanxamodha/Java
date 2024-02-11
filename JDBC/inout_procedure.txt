@@ -1,0 +1,12 @@
+create or replace procedure aa
+(
+           stno IN number, stname OUT char
+)IS
+begin
+select sname INTO stname from stud
+where sno = stno;
+commit;
+end;
+/
+
+

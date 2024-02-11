@@ -1,0 +1,16 @@
+create or replace procedure insertStud
+(
+           p_sno IN stud.sno%type,
+           p_sname IN stud.sname%type
+)IS
+BEGIN
+           insert into stud(sno,sname)
+           values(p_sno, p_sname);
+COMMIT;
+END;
+/
+
+
+create table stud
+(sno number(3), sname varchar2(30));
+/

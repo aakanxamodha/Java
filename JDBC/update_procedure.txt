@@ -1,0 +1,10 @@
+create or replace procedure updateStud
+(
+           p_sno IN stud.sno%type,
+           p_sname IN stud.sname%type
+)IS
+BEGIN
+           UPDATE stud set sname=p_sname
+           where sno=p_sno;
+COMMIT;
+END;

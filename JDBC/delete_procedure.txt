@@ -1,0 +1,8 @@
+create or replace procedure deleteStud
+(
+           p_sno IN stud.sno%type
+)IS
+BEGIN
+   	DELETE stud where sno = p_sno;
+COMMIT;
+END;
